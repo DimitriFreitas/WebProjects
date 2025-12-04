@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survivor Engine V2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HUD -->
+    <div id="ui-layer">
+        <div class="hud-top">
+            <!-- Barra de Vida (Vermelha) -->
+            <div class="bar-container">
+                <div id="hp-bar" style="width: 100%;"></div>
+            </div>
+            <!-- Barra de XP (Roxa) -->
+            <div class="bar-container xp-container">
+                <div id="xp-bar" style="width: 0%;"></div>
+            </div>
+            
+            <div class="score-container">
+                LVL <span id="level-display">1</span> | Kills: <span id="kill-count">0</span> | Tempo: <span id="timer">00:00</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Level Up (Escondido por padrão) -->
+    <div id="levelup-modal" class="hidden">
+        <div class="modal-content">
+            <h2>LEVEL UP!</h2>
+            <p>Escolha uma recompensa:</p>
+            <div id="cards-container">
+                <!-- cartas serão geradas via JS aqui -->
+            </div>
+        </div>
+    </div>
+
+    <canvas id="gameCanvas"></canvas>
+
+    <script src="survivorEngine.js"></script>
+</body>
+</html>
