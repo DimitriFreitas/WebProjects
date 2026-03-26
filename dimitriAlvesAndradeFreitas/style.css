@@ -1,0 +1,19 @@
+body {
+    text-align: center;
+    margin-top: 60px;
+    font-family: Arial;
+}
+
+#relogio {
+    font-size: 20px;
+    margin: 20px;
+}
+
+#restante {
+    font-size: 20px;
+    margin: 20px;
+}
+
+button {
+    padding: 5px 10px;
+}

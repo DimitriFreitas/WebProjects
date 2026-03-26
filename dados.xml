@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jogo>
+    <configuracoes>
+        <titulo>Survivor Academic Edition</titulo>
+        <invencibilidade_frames>30</invencibilidade_frames>
+    </configuracoes>
+
+    <!-- Caminhos das Imagens se não tiver, o jogo usa formas geométricas -->
+    <assets>
+        <!--<fundo>img/background.png</fundo>-->
+        <jogador>img/player.png</jogador>
+        <morcego>img/bat.png</morcego>
+        <zumbi>img/zombie.png</zumbi>
+        <esqueleto>img/skeleton.png</esqueleto>
+    </assets>
+
+    <jogador>
+        <velocidade>2.0</velocidade>
+        <vida_maxima>100</vida_maxima>
+    </jogador>
+
+    <inimigos>
+        <zumbi>
+            <velocidade>0.8</velocidade>wa
+            <vida>30</vida>
+            <xp>10</xp>
+        </zumbi>
+        <morcego>
+            <velocidade>3.0</velocidade>
+            <vida>15</vida>
+            <xp>20</xp>
+        </morcego>
+        <esqueleto>
+            <velocidade>1.0</velocidade>
+            <vida>20</vida>
+            <xp>30</xp>
+            <fire_rate>240</fire_rate>
+        </esqueleto>
+    </inimigos>
+</jogo>
